@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Imagem e Texto</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #232F3E; /* Cor de fundo */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px; /* Espaço entre a imagem e o texto */
+            max-width: 80%; /* Limita a largura máxima do conteúdo */
+            margin-bottom: 40px; /* Espaço extra entre os blocos de imagens */
+            text-align: left; /* Alinha o texto à esquerda */
+        }
+
+            .container img {
+                max-width: 40%; /* Ajusta a largura máxima da imagem */
+                height: auto;
+                border-radius: 10px;
+                transition: transform 0.2s ease-in-out; /* Adiciona uma transição suave */
+            }
+
+                .container img:hover {
+                    transform: scale(1.05); /* Aumenta a imagem em 5% quando o mouse estiver sobre ela */
+                }
+
+            .container p {
+                font-size: 1.2em;
+                color: #FFFFFF; /* Cor do texto */
+                max-width: 55%; /* Limita a largura do texto */
+                line-height: 1.5; /* Aumenta o espaçamento entre as linhas */
+            }
+
+        #Home {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+            #Home a {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #3cb371;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+    </style>
+</head>
+<body>
+    <!-- Bloco 1 com imagem e texto ao lado -->
+    <div class="container">
+        <img src="/images/pic18.jpg" alt="Imagem 1">
+        <p>
+            Somos a Casa do Forte, um lugar que nasceu com o propósito de transformar momentos comuns em experiências extraordinárias. Desde a nossa fundação, temos nos dedicado a criar um ambiente onde a felicidade é o elemento central, e cada detalhe é cuidadosamente planejado para proporcionar o máximo de conforto e bem-estar.
+        </p>
+    </div>
+
+    <!-- Bloco 2 com imagem e texto ao lado -->
+    <div class="container">
+        <img src="~/images/pic05.jpg" alt="Imagem 2">
+        <p>
+            Nossa missão vai além de simplesmente oferecer um espaço físico; buscamos criar um refúgio onde amigos e familiares possam se reunir, celebrar a vida e criar memórias que perduram para sempre. Acreditamos que momentos especiais não precisam de grandes ocasiões; eles acontecem nas interações simples, nas risadas compartilhadas, e nos gestos de carinho.
+        </p>
+    </div>
+
+    <div id="Home">
+        <a href="#" onclick="window.history.back();">VOLTAR</a>
+    </div>
+</body>
+</html>
+

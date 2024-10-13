@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Casa do Forte</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link rel="stylesheet" href="~/assets/css/styles.css" />
+</head>
+<body>
+    
+    <div class="contact-container">
+        <h2>Contato</h2>
+
+        <form class="contact-form" asp-action="SendEmail" method="post">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <input type="tel" name="phone" placeholder="Seu Telefone" required>
+            <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Informações de Contato</h3>
+            <p>📍 Endereço: R. Pres. Costa e Silva, 188 - Pau Amarelo, Paulista - PE, 53433-470</p>
+            <p>📞 Telefone: (81) 99862-9223</p>
+            <p>📧 Email: <a href="mailto:casadoforte44@gmail.com">casadoforte44@gmail.com</a></p>
+            <p>🕒 Horário de Atendimento: Seg a Sex - 9h às 18h</p>
+            <div class="button-container">
+                <a href="/" class="btn-blue">Voltar</a>
+            </div>
+            <h3>Siga-nos nas Redes Sociais</h3>
+            <p>
+                <a href="https://www.instagram.com/casadoforte_/" target="_blank"><strong>Instagram</strong></a> |
+                <a href="https://www.facebook.com/"><strong>Facebook</strong></a>
+                
+            </p>
+
+            <h3>Localização</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.2160220236237!2d-34.8307519!3d-7.91301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab3fd6544d04eb%3A0x6a78f5ad1d55c8e3!2sCasa%20do%20Forte!5e0!3m2!1spt-BR!2sbr!4v1695489716324!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="container">
+            &copy; 2024 - casa do forte - <a asp-area="" asp-controller="Home" asp-action="Privacy">Política de Privacidade</a>
+        </div>
+    </div>
+    @if (ViewBag.Message != null)
+    {
+        <p>@ViewBag.Message</p>
+    }
+</body>
+</html>

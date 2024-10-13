@@ -1,0 +1,283 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Casa do Forte</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <style>
+        .banner-image {
+            width: 1300px; /* largura da imagem */
+            height: 1000px; /* altura da imagem */
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 35%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff; /* ajuste a cor do texto */
+        }
+
+        .title {
+            font-size: 36px; /* ajuste o tamanho da fonte */
+            font-weight: bold; /* ajuste o peso da fonte */
+            margin-bottom: 20px; /* ajuste a margem inferior */
+        }
+
+        .subtitle {
+            font-size: 18px; /* ajuste o tamanho da fonte */
+            font-weight: normal; /* ajuste o peso da fonte */
+            margin-bottom: 10px; /* ajuste a margem inferior */
+        }
+
+        /* Estilos do avatar e chatbox */
+        #gigiAvatar {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #chatBox {
+            position: fixed;
+            bottom: 130px;
+            right: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            width: 300px;
+            display: none;
+            z-index: 1001;
+        }
+
+            #chatBox h2 {
+                font-size: 18px;
+                margin: 0 0 10px;
+                color: black;
+            }
+
+        #chatQuestion {
+            color: black;
+        }
+
+        #userResponse {
+            width: 100%;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        #calendarContainer {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="landing is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1><a href="Home">Casa do Forte</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="Home">Home</a></li>
+                                <li><a href="Home/Somos">QUEM SOMOS</a></li>
+                                <li><a href="Home/Estrutura">ESTRUTURA</a></li>
+                                <li><a href="Home/Contato">CONTATO</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="inner">
+                <img src="~/images/pic16.png" alt="Banner Image" class="banner-image">
+                <div class="banner-text">
+                    <h1 class="title">BEM VINDO A CASA DO FORTE</h1>
+                    <p class="subtitle">SEU MELHOR LUGAR</p>
+                </div>
+            </div>
+            <a href="#one" class="more scrolly">Saber mais</a>
+        </section>
+
+        <!-- Primeiro -->
+        <section id="one" class="wrapper style1 special">
+            <div class="inner">
+                <header class="major">
+                    <h2>Somos Especialistas Em Momentos Inesquecíveis</h2>
+                    <p>
+                        A Casa do Forte é o destino ideal para quem busca o local perfeito para celebrar momentos especiais.
+                        Com uma infraestrutura de excelência e uma localização privilegiada, este espaço é projetado para
+                        proporcionar experiências inesquecíveis. Vamos explorar alguns dos destaques que tornam o melhor lugar para suas festas.
+                    </p>
+                </header>
+            </div>
+        </section>
+
+        <!-- Segundo -->
+        <section id="two" class="wrapper alt style2">
+            <section class="spotlight">
+                <div class="image"><img src="images/pic11.jpg" alt="Ampla Área para Relaxar" /></div>
+                <div class="content">
+                    <h2>Ampla Área para Relaxar</h2>
+                    <p>
+                        Além da piscina, a Casa do Forte conta com uma ampla área de lazer que convida os visitantes a
+                        relaxarem e desfrutarem do ambiente.
+                    </p>
+                </div>
+            </section>
+
+            <section class="spotlight">
+                <div class="image"><img src="images/pic14.jpg" alt="Bio Ambiente" /></div>
+                <div class="content">
+                    <h2>Bio Ambiente</h2>
+                    <p>
+                        Com espaços verdes bem cuidados, áreas sombreadas e confortáveis, e uma atmosfera tranquila.
+                    </p>
+                </div>
+            </section>
+
+            <section class="spotlight">
+                <div class="image"><img src="images/pic18.jpg" alt="PAZ E TRANQUILIDADE" /></div>
+                <div class="content">
+                    <h2>PAZ E TRANQUILIDADE</h2>
+                    <p>
+                        Desfrute com sua família e crie memórias fantásticas.
+                    </p>
+                </div>
+            </section>
+        </section>
+
+        <!-- Terceiro -->
+        <section id="three" class="wrapper style3 special">
+            <div class="inner">
+                <header class="major">
+                    <h2>SEU MELHOR LUGAR!</h2>
+                    <p>
+                        Seja para um momento de descanso entre as atividades da festa ou para uma conversa tranquila com amigos e familiares,
+                        a Casa do Forte oferece o ambiente ideal para relaxar.
+                    </p>
+                </header>
+                <ul class="features">
+                    <li class="icon fa-paper-plane">
+                        <h3>FAÇA SUA RESERVA</h3>
+                        <p>ENTRE EM CONTATO PELO TELEFONE (81) 99862-9223</p>
+                    </li>
+                    <li class="icon brands fa-instagram">
+                        <h3>SIGA-NOS</h3>
+                        <p>NAS REDES SOCIAIS PELO INSTAGRAM</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>Desenvolvimento</li>
+                <li>Marcus Souza</li>
+                <li><a href="#" class="button fit">Subir</a></li>
+            </ul>
+        </footer>
+        <div class="container">
+            &copy; 2024 - casa do forte - <a asp-area="" asp-controller="Home" asp-action="Privacy">Política de Privacidade</a>
+        </div>
+    </div>
+    <div>
+
+        <img src="https://www.designi.com.br/images/preview/11239175.jpg" id="gigiAvatar" alt="" />
+
+    </div>
+    <!-- Caixa de chat que aparece quando clica no avatar -->
+    <div id="chatBox">
+        <h2>Olá! Eu sou a GIGI</h2>
+        <p id="chatQuestion">Em que posso te ajudar? Deseja alugar nosso espaço?</p>
+        <input type="text" id="userResponse" placeholder="Digite sua resposta aqui" />
+        <button onclick="sendResponse()">Enviar</button>
+        <div id="calendarContainer"></div>
+
+
+    </div>
+
+
+    <script>
+        // Mostrar ou esconder o chat quando clica no avatar
+        document.getElementById('gigiAvatar').onclick = function () {
+            document.getElementById('chatBox').style.display = 'block';
+        };
+
+        var step = 0;
+        var userName = '';
+        var userCPF = '';
+        var userEmail = '';
+        var userDate = '';
+
+        function sendResponse() {
+            var response = document.getElementById('userResponse').value.toLowerCase();
+
+            if (step === 0) {
+                if (response === 'sim') {
+                    document.getElementById('chatQuestion').innerText = "Ótimo! Me informe seu nome completo.";
+                    step++;
+                } else if (response === 'não') {
+                    document.getElementById('chatQuestion').innerText = "Obrigado pelo contato!";
+                    setTimeout(function () {
+                        document.getElementById('chatBox').style.display = 'none';
+                    }, 2000);
+                }
+            } else if (step === 1) {
+                userName = response;
+                document.getElementById('chatQuestion').innerText = "Obrigado, " + userName + "! Agora me diga seu CPF.";
+                step++;
+            } else if (step === 2) {
+                userCPF = response;
+                document.getElementById('chatQuestion').innerText = "Perfeito! Agora, por favor, informe seu e-mail.";
+                step++;
+            } else if (step === 3) {
+                userEmail = response;
+                document.getElementById('chatQuestion').innerText = "Excelente! Qual a data desejada para a reserva?";
+                step++;
+            } else if (step === 4) {
+                userDate = response;
+                document.getElementById('chatQuestion').innerText = "Obrigado! Você pode concluir sua reserva pelo WhatsApp: 81 982264558.";
+                setTimeout(function () {
+                    document.getElementById('chatBox').style.display = 'none';
+                }, 4000);
+            }
+
+            document.getElementById('userResponse').value = ''; // Limpa o campo de resposta
+        }
+    </script>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

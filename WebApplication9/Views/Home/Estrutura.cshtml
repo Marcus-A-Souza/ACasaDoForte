@@ -1,0 +1,143 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    body {
+        background-color: #232F3E; /* Cor de fundo */
+        font-family: Arial, sans-serif;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura - Casa do Forte</title>
+    <link rel="stylesheet" href="~/assets/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #3cb371;
+            color: white;
+        }
+
+            header h1 {
+                font-size: 2.5em;
+                margin-bottom: 10px;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+
+        .structure-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            gap: 20px;
+        }
+
+            .structure-section img {
+                max-width: 40%;
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .structure-section .text {
+                max-width: 55%;
+            }
+
+            .structure-section h2 {
+                color: #3cb371;
+                margin-bottom: 10px;
+            }
+
+            .structure-section p {
+                font-size: 1.1em;
+                line-height: 1.5;
+            }
+
+        /* Galeria de imagens */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+            .gallery img {
+                width: calc(33% - 10px);
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+        }
+
+            footer a {
+                color: #3cb371;
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nossa Estrutura</h1>
+        <p>Descubra todos os detalhes do espaço perfeito para o seu evento</p>
+    </header>
+
+    <div class="container">
+        <!-- Seção 1: Salão de Eventos -->
+        <section class="structure-section">
+            <img src="~/images/pic14.jpg" alt="Salão de Eventos">
+            <div class="text">
+                <h2>Salão de Eventos</h2>
+                <p>Nosso salão de eventos é amplo, moderno e climatizado. Com capacidade para até 200 convidados, o espaço é perfeito para celebrações, conferências e encontros corporativos. A decoração pode ser personalizada de acordo com o tema do evento.</p>
+            </div>
+        </section>
+
+        <!-- Seção 2: Área Externa -->
+        <section class="structure-section">
+            <img src="~/images/pic07.jpg" alt="Área Externa">
+            <div class="text">
+                <h2>Área Externa</h2>
+                <p>Desfrute da tranquilidade em nossa área externa, cercada por natureza e jardins bem cuidados. Ideal para momentos de lazer ao ar livre, fotos, e até mesmo para eventos menores e mais íntimos.</p>
+            </div>
+        </section>
+
+        <!-- Seção 3: Piscina -->
+        <section class="structure-section">
+            <img src="~/images/pic05.jpg" alt="Área da Piscina">
+            <div class="text">
+                <h2>Área da Piscina</h2>
+                <p>Com uma piscina cristalina, nossa área de lazer é o lugar ideal para relaxar e aproveitar os dias de sol. O espaço também pode ser utilizado para festas à beira da piscina ou atividades de confraternização.</p>
+            </div>
+        </section>
+        <div class="button-container">
+            <a href="/" class="btn-blue">Voltar</a>
+        </div>
+        
+    </div>
+
+</body>
+</html>
